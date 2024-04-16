@@ -78,35 +78,44 @@
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
-            //NumberCount();
-            //CountByThrees();
-            //Console.WriteLine("Enter first number");
-            //int num1 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter second number");
-            //int num2 = int.Parse(Console.ReadLine());
-            //CheckEqual(num1, num2);
-            //Console.WriteLine("Enter number");
-            //int num = int.Parse(Console.ReadLine());
-            //OddOrEven(num);
-            //PosOrNeg(age);
-            //Console.WriteLine("Enter your age");
-            //int result;
-            //string age = Console.ReadLine();
-            //bool success = int.TryParse(age, out result);
-            //if (success)
-            //{
-            //    VoteAgeCheck(result);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("sorry, an error occurred");
-            //}
-            //Console.WriteLine("enter a number");
-            //int num = int.Parse(Console.ReadLine());
-            //NumInRange(num);
+            NumberCount();
+
+            CountByThrees();
+
+            Console.WriteLine("Enter first number");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            int num2 = int.Parse(Console.ReadLine());
+            CheckEqual(num1, num2);
+
+            Console.WriteLine("Enter number and I'll tell you if it's odd or even");
+            int numEvenOdd = int.Parse(Console.ReadLine());
+            OddOrEven(numEvenOdd);
+
+            Console.WriteLine("Enter number and I'll tell you if it's positive or negative");
+            int numPosNeg = int.Parse(Console.ReadLine());
+            PosOrNeg(numPosNeg);
+
+            Console.WriteLine("Enter your age");
+            int result;
+            string? age = Console.ReadLine();
+            bool success = int.TryParse(age, out result);
+            if (success)
+            {
+                VoteAgeCheck(result);
+            }
+            else
+            {
+                Console.WriteLine("sorry, an error occurred");
+            }
+
+            Console.WriteLine("Enter a number and I'll tell you if it falls between 10 and -10");
+            int numRange = int.Parse(Console.ReadLine());
+            NumInRange(numRange);
+
             Console.WriteLine("enter a number and I will show you a multiplication table through 12");
-            int num = int.Parse(Console.ReadLine());
-            MultTable12(num);
+            int numMult = int.Parse(Console.ReadLine());
+            MultTable12(numMult);
         }
 
     }
